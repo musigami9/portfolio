@@ -1,0 +1,167 @@
+ul {
+  list-style-type: square;
+}
+
+@media (min-width: 1500px) {
+
+  img.portrait {
+    width: 80%;
+    margin: 0px 0px 0px 40px;
+  }
+
+  .left {
+    display: inline-block;
+    width: 545px;
+    margin: 15px;
+  }
+
+  .right {
+    display: inline-block;
+    width: 545px;
+    margin: 15px;
+    vertical-align: top;
+  }
+
+  .preview img {
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    object-fit: contain;
+  }
+
+  .thumbnails {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+
+  .thumbnails img {
+    padding: 5px;
+    width: 219px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+}
+
+@media (min-width: 900px) and (max-width: 1499px) {
+
+  img.portrait {
+    width: 80%;
+    margin: 0px 0px 0px 40px;
+  }
+
+  .left {
+    display: inline-block;
+    width: 410px;
+    margin: 15px;
+    vertical-align: top;
+  }
+
+  .right {
+    display: inline-block;
+    width: 410px;
+    margin: 15px;
+  }
+
+  .preview img {
+    width: 700px;
+    height: 544px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    object-fit: contain;
+  }
+
+  .thumbnails {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+
+  .thumbnails img {
+    padding: 5px;
+    width: 163px;
+    height: 112px;
+    object-fit: cover;
+  }
+
+  iframe {
+    width: 410px;
+    height: 243px;
+  }
+
+  table.commissions {
+    width: 885px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  td img {
+    width: 278px;
+    padding: 1.5%;
+    text-align: center;
+  }
+
+  th {
+    padding: 10px;
+    background: rgba(115, 160, 163, 0.8);
+    color: white;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 400px) and (max-width: 899px) {
+
+  img.portrait {
+    display: block;
+    width: 80%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+
+  .left {
+    display: block;
+    width: 100%;
+  }
+
+  .right {
+    display: block;
+    width: 100%;
+  }
+
+  .preview img {
+    max-width: 420px;
+    height: 326px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    object-fit: contain;
+  }
+
+  .thumbnails {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+
+  .thumbnails img {
+    padding: 5px;
+    width: 70px;
+    height: 48px;
+    object-fit: cover;
+  }
+
+  iframe {
+    width: 420px;
+    height: 249px;
+  }
+
+}
+
+@media (max-width: 399px) {
+
+}

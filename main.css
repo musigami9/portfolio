@@ -1,0 +1,537 @@
+p {
+  margin: 0px;
+  padding: 10px;
+  font-family: 'Quattrocento Sans';
+  color: #8F8F8F;
+  line-height: 1.4em;
+  font-size: 15px;
+}
+
+li {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quattrocento Sans';
+  color: #8F8F8F;
+}
+
+h1 {
+  font-family: 'Bungee Hairline';
+  color: rgb(115, 160, 163);
+  margin: 0px;
+  float: left;
+  padding: 10px 10px 10px 30px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 29px;
+}
+
+h2 {
+  font-family: 'Bungee Hairline';
+  font-size: 26px;
+  color: rgb(115, 160, 163);
+}
+
+h2.first {
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Bungee Hairline';
+  padding: 0px;
+  margin: 15px 0px 25px 0px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+::selection {
+  background: #228277;
+  color: white;
+}
+
+a:link, a:visited, a:active {
+    color: rgb(115, 160, 163);
+    text-decoration: none;
+}
+
+a:hover {
+  color: #228277;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+.header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 7;
+  background-color: rgb(218, 232, 230);
+}
+
+ul.navigation {
+  display: inline-block;
+  margin: 10px 35px 0px 0px;
+  float: right;
+  font-family: 'Bungee Hairline';
+}
+
+ul.navigation li {
+  display: inline-block;
+  padding: 3px;
+  font-size: 15px;
+}
+
+ul.navigation li a {
+  display: block;
+  padding: 5px 6px;
+}
+
+.top {
+  margin-top: 100px;
+  font-size: 18px;
+}
+
+.front_page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-image: url("images/sketchbook/oakland/2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+br {
+  display: block;
+  line-height: 120%;
+}
+
+.border {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid rgb(115, 160, 163);
+}
+
+.border:hover {
+  padding: 15px;
+  border-radius: 3px;
+  background-color: rgb(115, 160, 163);
+  color: white;
+  border: 1px solid rgb(115, 160, 163);
+}
+
+@media (min-width: 1500px) {
+
+  .dropdown {
+    display: none;
+  }
+
+  .center {
+    width: 1165px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  img.thumbnail{
+    width: 560px;
+    height: 560px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .tint:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(115, 160, 163, 0.85);
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      -ms-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+
+  .tint:hover:before {
+    background: none;
+   }
+
+  .tint {
+    width: 560px;
+    height: 560px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  span.caption {
+   cursor: pointer;
+   display: table;
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 1;
+   display: table-cell;
+   text-align: center;
+   font-family: 'Quattrocento Sans';
+   color: white;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  span.caption:hover {
+   opacity: 0;
+  }
+
+  .img.selection {
+    width: 522px;
+    margin: 0px;
+    height: 700px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1499px) {
+
+  .dropdown {
+    display: none;
+  }
+
+  .center {
+    width: 885px;
+    margin: 0 auto;
+  }
+
+  img.thumbnail{
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .tint:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(115, 160, 163, 0.85);
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      -ms-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+
+  .tint:hover:before {
+    background: none;
+   }
+
+  .tint {
+    width: 420px;
+    height: 420px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  span.caption {
+   cursor: pointer;
+   display: table;
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 1;
+   display: table-cell;
+   text-align: center;
+   font-family: 'Quattrocento Sans';
+   color: white;
+  }
+
+  h2 {
+    font-size: 33px;
+  }
+
+  span.caption:hover {
+   opacity: 0;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 899px) {
+
+  .center {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  img.thumbnail{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+    display: block;
+  }
+
+  .tint:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(115, 160, 163, 0.85);
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      -ms-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+
+  .tint:hover:before {
+    background: none;
+   }
+
+  .tint {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  span.caption {
+   cursor: pointer;
+   display: table;
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 1;
+   display: table-cell;
+   text-align: center;
+   font-family: 'Quattrocento Sans';
+   color: white;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  span.caption:hover {
+   opacity: 0;
+  }
+
+  ul.navigation {
+    display: none;
+  }
+
+  .dropbtn {
+    color: rgb(115, 160, 163);
+    background: none;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Bungee Hairline';
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    padding: 10px;
+      display: none;
+      min-width: 120px;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      background-color: rgb(218, 232, 230);
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background: #228277;
+    color: white;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 399px) {
+
+  .center {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  img.thumbnail{
+    width: 100%;
+    display: block;
+  }
+
+  .tint:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(115, 160, 163, 0.85);
+      -moz-transition: all .5s linear;
+      -webkit-transition: all .5s linear;
+      -ms-transition: all .5s linear;
+      -o-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+
+  .tint:hover:before {
+    background: none;
+   }
+
+  .tint {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  span.caption {
+   cursor: pointer;
+   display: table;
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 1;
+   display: table-cell;
+   text-align: center;
+   font-family: 'Quattrocento Sans';
+   color: white;
+  }
+
+  span.caption:hover {
+   opacity: 0;
+  }
+
+  ul.navigation {
+    display: none;
+  }
+
+  .dropbtn {
+    color: rgb(115, 160, 163);
+    background: none;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Bungee Hairline';
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    padding: 10px;
+      display: none;
+      min-width: 120px;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      background-color: rgb(218, 232, 230);
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background: #228277;
+    color: white;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+}
+
+span h2 {
+  color: white;
+}
+
+.center {
+  padding-bottom: 20px;
+}
+
+.center img.full {
+  width: 100%;
+}
+
+.right img, .left img {
+  width: 100%;
+  margin: 0 auto;
+}
