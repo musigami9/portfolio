@@ -1,7 +1,3 @@
-ul {
-  list-style-type: square;
-}
-
 @media (min-width: 1500px) {
 
   img.portrait {
@@ -33,7 +29,7 @@ ul {
 
   .thumbnails {
     width: 100%;
-    margin: 0 auto;
+    margin: 0px 0 70px 0px;
     padding: 10px 0px;
   }
 
@@ -77,7 +73,7 @@ ul {
 
   .thumbnails {
     width: 100%;
-    margin: 0 auto;
+    margin: 0px 0 50px 0px;
     padding: 10px 0px;
   }
 
@@ -92,26 +88,6 @@ ul {
     width: 410px;
     height: 243px;
   }
-
-  table.commissions {
-    width: 885px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  td img {
-    width: 278px;
-    padding: 1.5%;
-    text-align: center;
-  }
-
-  th {
-    padding: 10px;
-    background: rgba(115, 160, 163, 0.8);
-    color: white;
-    text-align: center;
-  }
-
 }
 
 @media (min-width: 400px) and (max-width: 899px) {
@@ -144,7 +120,7 @@ ul {
 
   .thumbnails {
     width: 100%;
-    margin: 0 auto;
+    margin: 0px 0 30px 0px;
     padding: 10px 0px;
   }
 
