@@ -34,8 +34,8 @@
   }
 
   .thumbnails img {
-    padding: 5px;
-    width: 219px;
+    padding: 0px;
+    width: 227.5px;
     height: 150px;
     object-fit: cover;
   }
@@ -60,6 +60,7 @@
     display: inline-block;
     width: 410px;
     margin: 15px;
+    float: right;
   }
 
   .preview img {
@@ -78,8 +79,8 @@
   }
 
   .thumbnails img {
-    padding: 5px;
-    width: 163px;
+    padding: 0px;
+    width: 172.5px;
     height: 112px;
     object-fit: cover;
   }
@@ -88,6 +89,17 @@
     width: 410px;
     height: 243px;
   }
+
+  img.full {
+    width: 100%;
+  }
+
+  img.half {
+    width: 419px;
+    padding: 10px;
+    vertical-align: middle;
+  }
+
 }
 
 @media (min-width: 400px) and (max-width: 899px) {
@@ -125,8 +137,8 @@
   }
 
   .thumbnails img {
-    padding: 5px;
-    width: 70px;
+    padding: 0px;
+    width: 79.5px;
     height: 48px;
     object-fit: cover;
   }

@@ -1,26 +1,26 @@
 p {
   margin: 0px;
   padding: 10px;
-  font-family: 'Quattrocento Sans';
-  color: #8F8F8F;
+  font-family: 'Work Sans';
+  color: black;
   line-height: 1.4em;
-  font-size: 15px;
+  font-size: 16px;
 }
 
-li {
-  font-size: 15px;
-  line-height: 1.4em;
+p.bigger {
+    font-size: 26px;
+    padding: 20px 0px;
 }
 
 body {
   margin: 0;
-  font-family: 'Quattrocento Sans';
-  color: #8F8F8F;
+  font-family: 'Work Sans';
+  color: black;
 }
 
 h1 {
-  font-family: 'Cutive';
-  color: rgb(115, 160, 163);
+  font-family: 'Work Sans';
+  color: black;
   margin: 0px;
   float: left;
   padding: 10px 10px 10px 30px;
@@ -31,30 +31,29 @@ h1 {
 }
 
 h2 {
-  font-family: 'Cutive';
+  font-family: 'Work Sans';
   font-size: 23px;
-  color: rgb(115, 160, 163);
-}
-
-h3.first {
-  margin-top: 0px;
-  color: rgb(115, 160, 163);
+  color: black;
 }
 
 h3 {
-  font-size: 22px;
-  font-family: 'cutive';
+  font-size: 20px;
+  font-family: 'Work Sans';
   padding: 0px;
-  margin: 15px;
+  margin: 0px 0px 15px 0px;
 }
+
 
 h4 {
   font-size: 15px;
   font-style: italic;
+  color: black;
 }
 
 ul {
   list-style-type: square;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 35px;
 }
 
 ::selection {
@@ -63,15 +62,15 @@ ul {
 }
 
 a:link, a:visited, a:active {
-    color: rgb(115, 160, 163);
+  color: black;
     text-decoration: none;
 }
 
 a:hover {
-  color: #228277;
-  -webkit-transition: all 0.45s ease-in-out;
+  border-bottom: 3px solid black;
+  /*-webkit-transition: all 0.45s ease-in-out;
   -moz-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;*/
 }
 
 .header {
@@ -80,17 +79,29 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 70;
-  background-color: rgb(218, 232, 230);
+  /*background-color: rgb(218, 232, 230);*/
 }
 
-ul.navigation {
-  display: inline-block;
+#footer {
+  width: 100%;
+  height: 65px;
+  bottom: 0px;
+  float: right;
+}
+
+li {
+  font-size: 15px;
+  line-height: 1.4em;
+  color: black;
+}
+
+ul.navigation, ul.links {
   margin: 10px 35px 0px 0px;
   float: right;
-  font-family: 'cutive';
+  font-family: 'Work Sans';
 }
 
-ul.navigation li {
+ul.navigation li, ul.links li {
   display: inline-block;
   padding: 3px;
   font-size: 15px;
@@ -99,6 +110,14 @@ ul.navigation li {
 ul.navigation li a {
   display: block;
   padding: 5px 6px;
+  color: black;
+}
+
+ul.links li a {
+  display: block;
+  color: black;
+  padding: 4px;
+  font-size: 20px;
 }
 
 .top {
@@ -106,17 +125,20 @@ ul.navigation li a {
   font-size: 18px;
 }
 
-.front_page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+section.front_page {
+  margin-top: 70px;
+  width: 100%;
+  height: 100vh;
   overflow: auto;
   background-image: url("images/sketchbook/oakland/2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+section#about, section#projects {
+  width: 100%;
+  background: white;
 }
 
 br {
@@ -129,15 +151,21 @@ br {
   margin-top: 15px;
   padding: 15px;
   border-radius: 3px;
-  border: 1px solid rgb(115, 160, 163);
+  border: 2px solid black;
 }
 
 .border:hover {
   padding: 15px;
   border-radius: 3px;
-  background-color: rgb(115, 160, 163);
+  background-color: black;
   color: white;
-  border: 1px solid rgb(115, 160, 163);
+  border: 2px solid black;
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+
 }
 
 @media (min-width: 1500px) {
@@ -153,8 +181,8 @@ br {
   }
 
   img.thumbnail{
-    width: 560px;
-    height: 560px;
+    width: 287px;
+    height: 287px;
     object-fit: cover;
     display: block;
   }
@@ -167,7 +195,7 @@ br {
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(115, 160, 163, 0.85);
+      background: black;
       -moz-transition: all .5s linear;
       -webkit-transition: all .5s linear;
       -ms-transition: all .5s linear;
@@ -180,12 +208,11 @@ br {
    }
 
   .tint {
-    width: 560px;
-    height: 560px;
+    width: 287px;
+    height: 287px;
     position: relative;
     cursor: pointer;
     display: inline-block;
-    margin: 10px;
   }
 
   span.caption {
@@ -200,7 +227,7 @@ br {
    opacity: 1;
    display: table-cell;
    text-align: center;
-   font-family: 'Quattrocento Sans';
+   font-family: 'Work Sans';
    color: white;
   }
 
@@ -230,6 +257,31 @@ br {
     display: inline-block;
     margin: 10px;
   }
+
+  .two_thirds {
+    width: 58%;
+    margin: 1.5%;
+  }
+
+  .two_thirds.inline {
+    display: inline-block;
+  }
+
+  .one_third {
+    width: 29%;
+    margin: 1.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .one_third img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .spacer.hide_me {
+    display: none;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1499px) {
@@ -240,12 +292,13 @@ br {
 
   .center {
     width: 885px;
+    padding: 10px;
     margin: 0 auto;
   }
 
   img.thumbnail{
-    width: 420px;
-    height: 420px;
+    width: 217px;
+    height: 217px;
     object-fit: cover;
     display: block;
   }
@@ -258,7 +311,7 @@ br {
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(115, 160, 163, 0.85);
+      background: black;
       -moz-transition: all .5s linear;
       -webkit-transition: all .5s linear;
       -ms-transition: all .5s linear;
@@ -271,12 +324,12 @@ br {
    }
 
   .tint {
-    width: 420px;
-    height: 420px;
+    width: 217px;
+    height: 217px;
     position: relative;
     cursor: pointer;
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
   }
 
   span.caption {
@@ -291,7 +344,7 @@ br {
    opacity: 1;
    display: table-cell;
    text-align: center;
-   font-family: 'Quattrocento Sans';
+   font-family: 'Work Sans';
    color: white;
   }
 
@@ -314,6 +367,38 @@ br {
     display: inline-block;
     margin: 10px;
   }
+
+  .two_thirds {
+    width: 58%;
+    margin: 1.5%;
+  }
+
+  .two_thirds.inline {
+    display: inline-block;
+  }
+
+  .one_third {
+    width: 29%;
+    margin: 1.5%;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  .one_third img {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+  }
+
+  .one_third img {
+    width: 100%;
+    vertical-align: top;
+    display: block;
+  }
+
+  .spacer.hide_me {
+    display: none;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 899px) {
@@ -324,10 +409,10 @@ br {
   }
 
   img.thumbnail{
-    width: 400px;
-    height: 400px;
+    width: 197px;
+    height: 200px;
     overflow: hidden;
-    display: block;
+    display: inline-block;
     object-fit: cover;
     display: block;
   }
@@ -340,7 +425,7 @@ br {
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(115, 160, 163, 0.85);
+      background: black;
       -moz-transition: all .5s linear;
       -webkit-transition: all .5s linear;
       -ms-transition: all .5s linear;
@@ -353,12 +438,12 @@ br {
    }
 
   .tint {
-    width: 400px;
-    height: 400px;
+    width: 197px;
+    height: 200px;
     position: relative;
     cursor: pointer;
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
   }
 
   span.caption {
@@ -373,7 +458,7 @@ br {
    opacity: 1;
    display: table-cell;
    text-align: center;
-   font-family: 'Quattrocento Sans';
+   font-family: 'Work Sans';
    color: white;
   }
 
@@ -402,7 +487,7 @@ br {
   }
 
   .dropbtn {
-    color: rgb(115, 160, 163);
+    color: black;
     background: none;
     padding: 16px;
     font-size: 16px;
@@ -417,14 +502,14 @@ br {
     float: right;
     text-align: right;
     padding: 10px;
-    font-family: 'cutive';
+    font-family: 'Work Sans';
   }
 
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     padding: 15px 15px 0px 0px;
     display: none;
-    min-width: 120px;
+    width: 80px;
     position: absolute;
     overflow: auto;
     left:auto;
@@ -436,17 +521,23 @@ br {
     padding: 10px;
     text-decoration: none;
     display: block;
-    background-color: rgb(218, 232, 230);
   }
 
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background: #228277;
+  /*.dropdown-content a:hover {
     color: white;
-    -webkit-transition: all 0.45s ease-in
-  }
+  }*/
 
   .show {display:block;}
+
+  .one_third , .two_thirds, .one_third img {
+    width: 100%;
+  }
+
+  /*.hide {
+    display: none;
+  }*/
+
 }
 
 @media (min-width: 0px) and (max-width: 399px) {
@@ -473,7 +564,7 @@ br {
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(115, 160, 163, 0.85);
+      background: black;
       -moz-transition: all .5s linear;
       -webkit-transition: all .5s linear;
       -ms-transition: all .5s linear;
@@ -506,7 +597,7 @@ br {
    opacity: 1;
    display: table-cell;
    text-align: center;
-   font-family: 'Quattrocento Sans';
+   font-family: 'Work Sans';
    color: white;
   }
 
@@ -534,7 +625,7 @@ br {
     float: right;
     text-align: right;
     padding: 10px;
-    font-family: 'cutive';
+    font-family: 'Work Sans';
   }
 
   /* Dropdown Content (Hidden by Default) */
@@ -579,4 +670,10 @@ span h2 {
 .right img, .left img {
   width: 100%;
   margin: 0 auto;
+}
+
+.spacer {
+  display: block;
+  width: 100%;
+  height: 50px;
 }
