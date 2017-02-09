@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script="idk.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -22,7 +23,7 @@
         </ul>
 
       <div class="dropdown">
-        <button id="myBtn" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <button id="myBtn" onclick="myFunctionNav()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
           <div id="myDropdown" class="dropdown-content">
             <a href="index.html"><b>Home</b></a>
             <a href="index.html#about"><b>About</b></a>
@@ -30,16 +31,6 @@
             <a href="resume.pdf" target="_blank"><b>Resume</b></a>
           </div>
         </div>
-
-        <script>
-          // Get the button, and when the user clicks on it, execute myFunction
-          document.getElementById("myBtn").onclick = function() {myFunction()};
-
-          /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-          function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-          }
-        </script>
       </div>
 
       <div class="top">
@@ -49,34 +40,6 @@
       </div>
 
       <div class="center">
-        <h3>Oakland &amp; San Francisco Illustrations</h3>
-          <div class="preview">
-      			<img id="preview" src="images/sketchbook/oakland/1.jpg" alt="" />
-      		</div>
-          <div class="thumbnails">
-            <img onClick="getElementById('preview').src=getElementById('img1').src" id="img1" src="images/sketchbook/oakland/1.jpg" alt="" />
-            <img onClick="getElementById('preview').src=getElementById('img2').src" id="img2" src="images/sketchbook/oakland/2.jpg" alt="" />
-            <img onClick="getElementById('preview').src=getElementById('img3').src" id="img3" src="images/sketchbook/oakland/3.jpg" alt="" />
-            <img onClick="getElementById('preview').src=getElementById('img4').src" id="img4" src="images/sketchbook/oakland/4.jpg" alt="" />
-            <img onClick="getElementById('preview').src=getElementById('img5').src" id="img5" src="images/sketchbook/oakland/5.jpg" alt="" />
-          </div>
-
-        <h3>Digital Portraits</h3>
-          <div class="preview">
-      			<img id="preview2" src="images/sketchbook/digital_portraits/me_dec_02.png" alt="" />
-      		</div>
-          <div class="thumbnails">
-            <img onClick="getElementById('preview2').src=getElementById('img6').src" id="img6" src="images/sketchbook/digital_portraits/sam.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img7').src" id="img7" src="images/sketchbook/digital_portraits/graham.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img8').src" id="img8" src="images/sketchbook/digital_portraits/alec.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img9').src" id="img9" src="images/sketchbook/digital_portraits/sidebar_01.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img10').src" id="img10" src="images/sketchbook/digital_portraits/sidebar_02.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img11').src" id="img11" src="images/sketchbook/digital_portraits/sidebar_03.jpg" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img20').src" id="img20" src="images/sketchbook/digital_portraits/diet_cig.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img21').src" id="img21" src="images/sketchbook/digital_portraits/me_dec_02.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img22').src" id="img22" src="images/sketchbook/digital_portraits/icon_jan15-03.png" alt="" />
-            <img onClick="getElementById('preview2').src=getElementById('img23').src" id="img23" src="images/sketchbook/digital_portraits/yurio.jpg" alt="" />
-          </div>
 
       <h3>Halo</h3>
         <div class="preview">
@@ -115,8 +78,9 @@
               <li><a href="http://www.facebook.com/musigami"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.instagram.com/taytutes"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.linkedin.com/in/taylor-tuteur-425202119"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="mailto:taylor.tuteur@wustl.edu"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.twitter.com/musigami"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:taylor.tuteur@wustl.edu"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.redbubble.com/people/musigami9"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
               </ul>
           </div>
         </div>

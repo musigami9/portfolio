@@ -1,0 +1,96 @@
+@media (min-width: 1500px) {
+	.slideshow-container{
+		width: 1165px;
+		height: 829px;
+		margin: auto;
+		background: white;
+		display: block;
+	}
+
+	.mySlides {
+		text-align: center;
+		padding: 20px 0px;
+	}
+
+	.slide{
+		width: 1165px;
+		height: 829px;
+		margin: 0 auto;
+		overflow: hidden;
+		display: block;
+		object-fit: contain;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1499px) {
+	.slideshow-container{
+		width: 885px;
+		height: 630px;
+		margin: auto;
+		background: white;
+		display: block;
+	}
+
+	.mySlides {
+		text-align: center;
+		padding: 20px 0px;
+	}
+
+	.slide{
+	  width: 885px;
+		height: 630px;
+	  margin: 0 auto;
+	  overflow: hidden;
+	  display: block;
+	  object-fit: contain;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 899px) {
+	.slideshow-container{
+		width: 420px;
+		height: 299px;
+		margin: auto;
+		background: white;
+		display: block;
+	}
+
+	.mySlides {
+		text-align: center;
+		padding: 20px 0px;
+	}
+
+	.slide{
+		width: 420px;
+		height: 299px;
+		margin: 0 auto;
+		overflow: hidden;
+		display: block;
+		object-fit: contain;
+	}}
+
+@media (min-width: 0px) and (max-width: 399px) {
+}
+
+.container{
+	width: 100%;
+}
+
+/*consistent over every width*/
+.prev, .next {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.7s ease;
+	width: 15px;
+}
+.next {
+	float: right;
+}
+
+.prev {
+	float: left;
+}

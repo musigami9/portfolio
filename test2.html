@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <title>testing testing</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+				<div class="slideshow-container">
+					<div class="mySlides">
+						<img src="images/sketchbook/oakland/1.jpg" class="slide">
+					</div>
+					<div class="mySlides">
+						<img src="images/sketchbook/oakland/2.jpg" class="slide">
+					</div>
+					<div class="mySlides">
+						<img src="images/sketchbook/oakland/3.jpg" class="slide">
+					</div>
+          <div class="mySlides">
+						<img src="images/sketchbook/oakland/4.jpg" class="slide">
+					</div>
+          <div class="mySlides">
+						<img src="images/sketchbook/oakland/5.jpg" class="slide">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+
+		<script type="text/javascript">
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			showMobileSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+				showMobileSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+				showMobileSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";
+					}
+
+				</script>
+
+
+
+      <div class="categories">
+        <img src="images/project_thumbnails/commissions.jpeg" img onclick="myFunction()" class="thumbnail" alt="SKetchbook">
+        <div id="myDIV" class="initial_hide">
+          <span class="caption">
+            <h2>Commissions</h2>
+              <ul>
+                <li>Brazilian Jiu Jitsu Club</li>
+                <li>Frontier's Magazine</li>
+                <li>The Greenleafs</li>
+                <li>Colorado Banker's Association</li>
+                <li>WashU Students For Israel</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+      <div class="categories">
+        <img src="images/project_thumbnails/sketchbook.png" img onclick="myFunction2()" class="thumbnail" alt="SKetchbook"></button>
+        <div id="myDIV2" class="initial_hide">
+          <span class="caption">
+            <h2>Sketchbook</h2>
+            <ul>
+              <li>Oakland/SF</li>
+              <li>Portraits</li>
+              <li>Halo</li>
+              <li>Etc.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+
+      <div class="categories">
+        <img src="images/project_thumbnails/wustl.jpeg" img onclick="myFunction3()" class="thumbnail" alt="WashU Projects">
+        <div id="myDIV3" class="initial_hide">
+          <span class="caption">
+            <h2>WashU</h2>
+            <ul>
+              <li>Microsites</li>
+              <li>Animatic</li>
+              <li>Games People Play</li>
+              <li>Digital Illustrations</li>
+              <li>Verbal To Visual</li>
+            </ul>
+          </span>
+          </div>
+        </div>
+
+      <div class="categories">
+        <img src="images/project_thumbnails/DFA.png" img onclick="myFunction4()" class="thumbnail" alt="Design For America">
+        <div id="myDIV4" class="initial_hide">
+          <span class="caption">
+            <h2>Design For America</h2>
+            <ul>
+              <li><a href="/DFA.html">What is DFA</a>?</li>
+              <li><a href="/malt.html">Malt</a></li>
+              <li><a href="/cubic.html">Cubic</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+
+
+      <script>
+      function myFunction() {
+          var x = document.getElementById('myDIV');
+          if (x.style.display === 'block') {
+              x.style.display = 'none';
+          } else {
+              x.style.display = 'block';
+          }
+      }
+
+      function myFunction2() {
+          var x = document.getElementById('myDIV2');
+          if (x.style.display === 'block') {
+              x.style.display = 'none';
+          } else {
+              x.style.display = 'block';
+          }
+      }
+
+      function myFunction3() {
+          var x = document.getElementById('myDIV3');
+          if (x.style.display === 'block') {
+              x.style.display = 'none';
+          } else {
+              x.style.display = 'block';
+          }
+      }
+
+      function myFunction4() {
+          var x = document.getElementById('myDIV4');
+          if (x.style.display === 'block') {
+              x.style.display = 'none';
+          } else {
+              x.style.display = 'block';
+          }
+      }
+      </script>
