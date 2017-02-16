@@ -106,3 +106,8 @@
     width: 100%;
   }
 }
+
+.parallax-window {
+	min-height: 95vh;
+	background: transparent;
+}

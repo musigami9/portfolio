@@ -127,12 +127,7 @@ ul.links li a {
 section.front_page {
   margin-top: 70px;
   width: 100%;
-  height: 100vh;
   overflow: auto;
-  background-image: url("images/sketchbook/oakland/2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 section#about, section#projects {
