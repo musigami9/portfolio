@@ -347,6 +347,10 @@ br {
   	width: 199.5px;
   }
 
+  .two_thirds.bigger {
+    font-size: 22px;
+  }
+
   .project_main {
   	display: inline;
   }
@@ -479,8 +483,12 @@ br {
     width: 80%;
   }
 
+  .two_thirds.bigger {
+    font-size: 18px;
+  }
+
   .project_main, img.thumbnail, span.caption, .categories {
-  	width: 100%;
+  	width: 90%;
   }
 
   .project_main {
@@ -494,6 +502,7 @@ br {
   img.thumbnail{
   	display: inline-block;
     cursor: pointer;
+    margin: 5% 10%;
   }
 
   span.caption {
@@ -502,7 +511,8 @@ br {
    display: table-cell;
    font-family: 'Work Sans';
    color: black;
-   padding: 0px;
+   padding-left: 10%;
+   padding-bottom: 15px;
   }
 
   .initial_hide {
@@ -574,10 +584,6 @@ br {
 
 .center {
   padding-bottom: 20px;
-}
-
-.center img.full {
-  width: 100%;
 }
 
 .right img, .left img {

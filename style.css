@@ -22,6 +22,15 @@
     width: 1163px;
     height: 655px;
   }
+
+  img.full {
+    width: 100%;
+  }
+
+  img.half {
+    width: 545px;
+    vertical-align: middle;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1499px) {
@@ -55,7 +64,7 @@
   }
 
   img.half {
-    width: 409px;
+    width: 432px;
     vertical-align: middle;
   }
 
@@ -85,8 +94,9 @@
     height: 249px;
   }
 
-  img.half {
-    width: 100%;
+  img.full, img.half, img.two_thirds {
+    width: 80%;
+    padding: 10%;
   }
 }
 
@@ -101,8 +111,14 @@
     width: 100%;
   }
 
-  img.half {
+  iframe {
     width: 100%;
+    height: 100%;
+  }
+
+  img.full, img.half, img.two_thirds {
+    width: 80%;
+    padding: 10%;
   }
 }
 
