@@ -101,6 +101,13 @@
 }
 
 @media screen and (max-width : 439px) {
+  img.portrait {
+    display: block;
+    width: 80%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+
   .left {
     display: block;
     width: 100%;

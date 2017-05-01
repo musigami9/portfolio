@@ -1,15 +1,46 @@
 <!doctype html>
 <html>
   <head>
-    <title>Thinking Inside the Box</title>
+    <title>Working On Site</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="test.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
   </head>
 
     <body>
@@ -35,20 +66,23 @@
 
       <div class="top">
         <div class="center">
-        <h3>Thinking Inside the Box</h3>
-        <p class="bigger">We will focus on learning to essentialize uncommon figures using a set of predetermined constraints. The constraints in this project present challenges that should engage us with a set of diverse, modern approaches to creating simple forms.</p>
+          <h3>Working On Site</h3>
+        <p class="bigger">Using the backdrop of Florence, Italy, we learned to sketch quickly on location, implying complexity but not drawing every single detail. For the final project, we selected either a place, event, or action, and illustrated a book based on that activity in Florence.</p>
 
         <div class="spacer"></div>
 
         <div class="slideshow-container">
           <div class="mySlides">
-            <img src="images/wash_u/branding/project_01-01.png" class="slide">
+            <img src="images/workingonsite/mockup_cover.jpg" class="slide">
           </div>
           <div class="mySlides">
-            <img src="images/wash_u/branding/project_01-02.png" class="slide">
+            <img src="images/workingonsite/spread_01.jpg" class="slide">
           </div>
           <div class="mySlides">
-            <img src="images/wash_u/branding/project_01-03.png" class="slide">
+            <img src="images/workingonsite/spread_02.jpg" class="slide">
+          </div>
+          <div class="mySlides">
+            <img src="images/workingonsite/back_cover.jpg" class="slide">
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -58,15 +92,10 @@
         <div class="spacer"></div>
         <div class="spacer"></div>
 
-        <p class="two_thirds"><b>Luchador</b> | full figure shown, straight-on front perspective, limited to two colors, must use only shape.</p>
+        <p class="two_thirds"><b>Bars In Florence</b> | I focused on bar culture in Italy and how it differs from American coffee culture. I drew my favorite spots in the city, adding commentary about why they're so great and my reommendations. My book has two versions: a fully-colored version and a coloring book version!</p>
 
-        <p class="two_thirds"><b>Lancia stratos</b> | must be side profile, unlimited color, using both uniform line and shape.</p>
-
-        <p class="two_thirds"><b>Orangutan</b> | only the orangutan's face may be depicted, limited to black and white, using only lines.</p>
-
-        <p class="one_third">Process book <a href="http://issuu.com/taylortuteur/docs/process_book?e=24743813/45100633">here</a>.</p>
-
-        <div class="spacer"></div>
+        <p class="two_thirds">Read the whole book here.</p>
+    </div>
 
       <div id="footer">
         <p class="inline"><i class="fa fa-copyright" aria-hidden="true"></i> Design &amp; layout by Tay Tuteur</p>
@@ -78,9 +107,9 @@
             <li><a href="mailto:taylor.tuteur@wustl.edu"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
             <li><a href="http://www.redbubble.com/people/musigami9"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
           </ul>
-        </div>
       </div>
-    </div>
-  </body>
-<script src="idk.js"></script>
-</html>
+      </div>
+      </section>
+      </body>
+      <script src="idk.js"></script>
+      </html>

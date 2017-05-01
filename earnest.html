@@ -1,15 +1,45 @@
 <!doctype html>
 <html>
   <head>
-    <title>We Open in Three Weeks!</title>
+    <title>Play Poster</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="test.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
   </head>
 
     <body>
@@ -17,7 +47,7 @@
         <h1>Taylor Tuteur</h1>
         <ul class="navigation">
           <li><a href="index.html"><b>Home</b></a></li>
-          <li><a href="index.html#about"><b>About</b></a></li>
+          <li><a href="about.html"><b>About</b></a></li>
           <li><a href="index.html#projects"><b>Projects </b></a></li>
           <li><a href="resume.pdf" target="_blank"><b>Resume</b></a></li>
         </ul>
@@ -26,7 +56,7 @@
         <button id="myBtn" onclick="myFunctionNav()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
           <div id="myDropdown" class="dropdown-content">
             <a href="index.html"><b>Home</b></a>
-            <a href="index.html#about"><b>About</b></a>
+            <a href="about.html"><b>About</b></a>
             <a href="index.html#projects"><b>Projects</b></a>
             <a href="resume.pdf" target="_blank"><b>Resume</b></a>
           </div>
@@ -35,30 +65,12 @@
 
       <div class="top">
         <div class="center">
-        <h3>Branding and Identity: Project 02</h3>
-        <p class="bigger two_thirds">We Open in Three Weeks!</p>
-        <div class="one_third"></div>
-        <p class="two_thirds inline">We will imagine that we have been tasked with redesigning the identity of a restaurant in Florence and that our client would like to reopen three weeks from today. What makes this place different from other restaurants, especially those restaurants that have a similar menu, location, theme, etc?</p>
+          <h3>The Importance of Being Earnest</h3>
+        <p class="bigger">A poster design for the play The Importance of Being Earnest by Oscar Wilde. From the class Verbal To Visual, taught by Professor Jeffrey Pike, spring 2017.</p>
 
         <div class="spacer"></div>
 
-        <img src="images/wash_u/branding/logotype.png" class="full">
-        <p class="two_thirds"><b>Logotype</b> | I wanted to emphasize the restaurant's history as one of the older and more established bakeries around Florence (Vecchio Forno literally means "Old Bakery") and give the type a hand-written treatment. Their current logo features a combination of the Duomo, a fleur-de-lis, and a wheat stalk. In retaining some sense of their current identity, I chose to involve the wheat stalk into the new logotype.</p>
-
-        <div class="spacer"></div>
-
-        <img src="images/wash_u/branding/menu.png" class="full">
-        <p class="two_thirds"><b>Menu mock-up</b> | The idea behind the online menu was meant to support Vecchio Forno's rotating menu that changes daily. Rather than a physical paper menu that would be costly and inefficient to change daily, the online menu could easily be switched from day to day. View the working site <a href="https://musigami9.github.io/vf_menu/">here</a>.</p>
-
-        <div class="spacer"></div>
-
-        <img src="images/wash_u/branding/bc_front.jpg" class="half">
-          <div class="small_spacer"></div>
-        <img src="images/wash_u/branding/bc_back.jpg" class="half">
-        <p class="two_thirds"><b>Business card</b> | Logotype, location, and hours on one side with a bolder version of the website illustration on the back side.</p>
-
-        <p class="one_third">Process book <a href="http://issuu.com/taylortuteur/docs/process_book_02?e=24743813/45127177here">here</a>.</p>
-
+        <img src="images/verbalvisual/earnest.jpg" class="full">
         <div class="spacer"></div>
 
       <div id="footer">
@@ -71,9 +83,10 @@
             <li><a href="mailto:taylor.tuteur@wustl.edu"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
             <li><a href="http://www.redbubble.com/people/musigami9"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
           </ul>
-        </div>
       </div>
     </div>
-  </body>
+  </section>
+</body>
+
 <script src="idk.js"></script>
 </html>
