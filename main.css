@@ -164,7 +164,7 @@ br {
 
 .tint {
   position: relative;
-  float: left;
+  display: inline-block;
   cursor: pointer;
   margin-right: 10px;
   margin: 10px;
@@ -221,8 +221,12 @@ opacity: 1;
     margin: 0 auto;
   }
 
-  img.thumbnail, span.caption, .initial_hide {
-  	width: 368px;
+  img.thumbnail, span.caption {
+  	width: 364.5px;
+  }
+
+  .tint {
+    height: 364.5px;
   }
 
   img.thumbnail{
@@ -281,17 +285,16 @@ opacity: 1;
   }
 
   img.thumbnail, span.caption {
-    width: 201px;
+    width: 197px;
   }
 
-  img.thumbnail{
-    height: 201px;
+  img.thumbnail {
     display: inline-block;
     cursor: pointer;
   }
 
   .tint {
-    height: 201px;
+    height: 197px;
   }
 
   span.caption {
@@ -333,11 +336,11 @@ opacity: 1;
   }
 
   img.thumbnail, span.caption {
-  	width: 199.5px;
+  	width: 197px;
   }
 
   .tint {
-    height: 199.5px;
+    height: 197px;
   }
 
   span.caption {
