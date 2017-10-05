@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Oakland Illustrations</title>
+    <title>Botanic Garden Illustrations</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -34,23 +34,29 @@
       <div class="top">
         <div class="center">
         <h3>Oakland &amp; SF</h3>
-          <p class="bigger two_thirds">A series of illustrations from my visit to Oakland and San Francisco, August 2016.</p>
+          <p class="bigger two_thirds">A series of illustrations from my visit to the St. Louis Botanic Garden in September 2017.</p>
 
         <div class="slideshow-container">
           <div class="mySlides">
-            <img src="images/sketchbook/oakland/1.jpg" class="slide">
+            <img src="images/botanic_garden/01.jpg" class="slide">
           </div>
           <div class="mySlides">
-            <img src="images/sketchbook/oakland/2.jpg" class="slide">
+            <img src="images/botanic_garden/02.jpg" class="slide">
           </div>
           <div class="mySlides">
-            <img src="images/sketchbook/oakland/3.jpg" class="slide">
+            <img src="images/botanic_garden/03.jpg" class="slide">
           </div>
           <div class="mySlides">
-            <img src="images/sketchbook/oakland/4.jpg" class="slide">
+            <img src="images/botanic_garden/04.jpg" class="slide">
           </div>
           <div class="mySlides">
-            <img src="images/sketchbook/oakland/5.jpg" class="slide">
+            <img src="images/botanic_garden/05.jpg" class="slide">
+          </div>
+          <div class="mySlides">
+            <img src="images/botanic_garden/06.jpg" class="slide">
+          </div>
+          <div class="mySlides">
+            <img src="images/botanic_garden/07.jpg" class="slide">
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
