@@ -13,39 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    </script>
-
   </head>
 
     <body>
       <div class="header">
-        <h1>Taylor Tuteur</h1>
+        <h1><a href="http://taylortuteur.com">Tay Tuteur</a></h1>
         <ul class="navigation">
           <li><a href="index.html"><b>Home</b></a></li>
           <li><a href="about.html"><b>About</b></a></li>
@@ -117,7 +89,7 @@
               <li><a href="http://www.facebook.com/musigami"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.instagram.com/taytutes"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.linkedin.com/in/taylor-tuteur-425202119"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="http://www.twitter.com/musigami"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.twitter.com/taytutes"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                 <li><a href="mailto:taylor.tuteur@wustl.edu"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.redbubble.com/people/musigami9"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
               </ul>
