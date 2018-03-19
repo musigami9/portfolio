@@ -1,4 +1,4 @@
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 
   img.portrait {
     width: 80%;
@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: 900px) and (max-width: 1499px) {
+@media (min-width: 900px) and (max-width: 1199px) {
 
   img.portrait {
     width: 80%;

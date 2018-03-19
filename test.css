@@ -1,4 +1,4 @@
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 	.slideshow-container{
 		width: 1165px;
 		height: 829px;
@@ -22,7 +22,7 @@
 	}
 }
 
-@media (min-width: 900px) and (max-width: 1499px) {
+@media (min-width: 900px) and (max-width: 1199px) {
 	.slideshow-container{
 		width: 885px;
 		height: 630px;

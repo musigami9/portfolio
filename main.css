@@ -224,7 +224,7 @@ span.caption:hover {
 opacity: 1;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 
   .dropdown {
     display: none;
@@ -282,7 +282,7 @@ opacity: 1;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1499px) {
+@media (min-width: 900px) and (max-width: 1199px) {
 
   .dropdown {
     display: none;
