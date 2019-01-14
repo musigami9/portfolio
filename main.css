@@ -92,11 +92,15 @@ ul {
 
 .link_to_site {
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 100px;
+  right: 100px;
+  width: 200px;
+  height: 60px;
   background-color: black;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
+  text-align: center;
+  font-size:27px;
 }
 
 #footer {
