@@ -19,12 +19,12 @@ body {
 }
 
 a:link, a:visited, a:active {
-  color: black;
+  color: #626262;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e5ccc9;
+  color: #626262;
   -moz-transition: all .3s linear;
   -webkit-transition: all .3s linear;
   -ms-transition: all .3s linear;
@@ -80,14 +80,6 @@ ul {
   position: fixed;
   top: 0;
   z-index: 70;
-}
-
-.full_size_image {
-  background-image: url("images/arizona.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
 }
 
 #footer {
@@ -192,7 +184,7 @@ br {
   }
 
 .tint:hover:before {
-  background: rgba(229, 204, 201, 1.0);
+  background: rgba(0, 0, 0, 1.0);
  }
 
 span.caption {
